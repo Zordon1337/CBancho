@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Packets">
+      <UniqueIdentifier>{bbff70bb-36ce-4cf2-aa7e-f92824599234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Structs">
+      <UniqueIdentifier>{a3a99304-82e4-44e0-bbd0-f6aefd4aa092}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CBancho.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CPacket.h">
+      <Filter>Pliki źródłowe\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="CBanchoHelper.hpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClInclude>
+    <ClInclude Include="CLoginReply.h">
+      <Filter>Pliki źródłowe\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="CPackets.h">
+      <Filter>Pliki źródłowe\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes.h">
+      <Filter>Pliki źródłowe</Filter>
+    </ClInclude>
+    <ClInclude Include="User.hpp">
+      <Filter>Pliki źródłowe\Structs</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
