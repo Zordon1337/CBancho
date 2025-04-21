@@ -136,6 +136,7 @@
     <ClInclude Include="CLoginReply.h" />
     <ClInclude Include="CPacket.h" />
     <ClInclude Include="CPackets.h" />
+    <ClInclude Include="CUserStats.h" />
     <ClInclude Include="Includes.h" />
     <ClInclude Include="User.hpp" />
   </ItemGroup>

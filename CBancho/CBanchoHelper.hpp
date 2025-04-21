@@ -1,9 +1,6 @@
 #pragma once
 #include "Includes.h"
 
-#include "CPacket.h"
-#include "CPackets.h"
-
 namespace CBanchoHelper {
     bool readAll(int sock, void* buffer, size_t length) {
         size_t totalReceived = 0;
@@ -27,11 +24,9 @@ namespace CBanchoHelper {
         return true;
     }
     template<typename T>
-    bool Write(int socket, T value) {
+    static bool Write(int socket, T value) {
         uint8_t buffer[sizeof(T)];
-        for (size_t i = 0; i < sizeof(T); i++) {
-            buffer[i] = (value >> (8 * i)) & 0xFF;  
-        }
+        std::memcpy(buffer, &value, sizeof(T));
         return send(socket, reinterpret_cast<const char*>(buffer), sizeof(T), 0) != SOCKET_ERROR;
     }
     std::string ReadLine(int socket) {

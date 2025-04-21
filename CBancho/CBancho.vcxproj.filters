@@ -36,5 +36,8 @@
     <ClInclude Include="User.hpp">
       <Filter>Pliki źródłowe\Structs</Filter>
     </ClInclude>
+    <ClInclude Include="CUserStats.h">
+      <Filter>Pliki źródłowe\Packets</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -20,6 +20,9 @@ int main()
 		std::cout << "[DEBUG] User " << user.username << " Logged in from build " << user.build << std::endl;
 		CLoginReply loginreply = CLoginReply(user);
 		loginreply.WriteToStream(client);
+
+		CUserStats stats = CUserStats();
+		stats.WriteToStream(client);
 	}
 	closesocket(server);
 	WSACleanup();

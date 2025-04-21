@@ -5,6 +5,7 @@
 #include <sstream>
 #include <vector>
 #include <string>
+#include <cstring>
 #pragma comment(lib, "ws2_32.lib")
 
 

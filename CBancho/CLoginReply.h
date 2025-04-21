@@ -1,7 +1,8 @@
 #pragma once
 #include "Includes.h"
-
 #include "CBanchoHelper.hpp"
+#include "CPacket.h"
+
 class CLoginReply : public CPacket {
 	UserLogin user;
 public:
